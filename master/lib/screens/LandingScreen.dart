@@ -21,37 +21,39 @@ class LandingScreen extends StatelessWidget{
            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
            children: <Widget>[
 
-             GestureDetector(
+             
+                Expanded(
+                  child: GestureDetector(
                onTap: (){
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Share()),
                 );
                },
-               child: Expanded(
+
                child: Container(
                     child: shareImage,
                     height: 200.0,
                     width: 200.0,
                  )
-               )
+               ),
              ),
 
-             GestureDetector(
+            
+             Expanded(
+                child:  GestureDetector(
                onTap: (){
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Alert()),
                 );
                },
-              
-               child: Expanded(
                  child: Container(
                     child: alertImage,
                      height: 200.0,
                     width: 200.0,
                  )
-               )
+               ),
              ),
              
             
